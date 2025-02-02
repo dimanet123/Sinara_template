@@ -1,0 +1,57 @@
+# Python файлы кеша
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+.env/
+
+# Логи и временные файлы
+*.log
+*.out
+*.err
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Секретные файлы (пароли, ключи, конфиги)
+*.pem
+*.key
+*.crt
+*.envrc
+.env.local
+config.yaml
+secrets.json
+secrets.toml
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
+.ipynb_checkpoints/
+*.code-workspace
+
+# Сборка и кеш Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Тестирование и кэш
+.coverage
+.cache/
+pytest_cache/
+
+# Файлы данных
+*.csv
+*.xlx
+*.xlsx
+data/
+
+
+

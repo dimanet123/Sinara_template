@@ -53,3 +53,24 @@ subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
 
 print("🚀 Репозиторий загружен в GitLab!")
 
+# 🔹 Делаем ветку main защищённой (protected)
+protect_branch_data = {
+    "name": "main",
+    "push_access_level": 0,  # Отключает push в main (только merge)
+    "merge_access_level": 40,  # Разрешает merge владельцам и мейнтейнерам
+    "unprotect_access_level": 40  # Только владельцы и мейнтейнеры могут снять защиту
+}
+
+print("🔒 Защищаем ветку main...")
+protect_response = requests.post(
+    f"{gitlab_url}/projects/{project_info['id']}/protected_branches",
+    headers=headers,
+    json=protect_branch_data
+)
+
+if protect_response.status_code == 201:
+    print("✅ Ветка main теперь защищена!")
+else:
+    print(f"❌ Ошибка при защите ветки: {protect_response.json()}")
+
+
