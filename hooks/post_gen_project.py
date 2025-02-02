@@ -11,6 +11,11 @@ gitlab_group_id = "193"  # ID группы в GitLab, куда создаётс�
 gitlab_token = getpass.getpass("Введите ваш GitLab Token: ")
 project_name = "{{ cookiecutter.project_name }}"
 
+use_gitlab = input("🔗 Хотите связать проект с GitLab? (y/n): ").strip().lower()
+if use_gitlab != "y":
+    print("✅ Проект создан без интеграции с GitLab.")
+    exit(0)
+    
 # 🔹 Проверяем введён ли токен
 if not gitlab_token:
     print("❌ Ошибка: Не введён GitLab Token.")
