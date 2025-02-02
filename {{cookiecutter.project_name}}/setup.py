@@ -14,7 +14,6 @@ setup(
     author="{{cookiecutter.author_name}}",
     author_email="your_email@example.com",
     description="Описание вашего проекта",
-    long_description=readme(),
     long_description_content_type="text/markdown",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
