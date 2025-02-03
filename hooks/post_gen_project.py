@@ -6,7 +6,7 @@ import json
 
 # 🔹 Ввод данных пользователя
 gitlab_url = "http://10.77.0.107/api/v4"
-gitlab_group_id = "193"  # ID группы в GitLab, куда создаётся проект
+gitlab_group_id = "198"  # ID группы в GitLab, куда создаётся проект
 
 project_name = "{{ cookiecutter.project_name }}"
 
