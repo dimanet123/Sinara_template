@@ -1,5 +1,6 @@
 {
     "project_name": "my_project",
+    "project_group(must be precisely like name of group)": "Group_name",
     "author_name": "Dimas",
     "version": "0.1.0",
     "license": ["MIT", "GPLv3", "Apache 2.0"],
