@@ -1,10 +1,7 @@
 {
     "project_name": "my_project",
-    "project_group(must be precisely like name of group)": "Group_name",
-    "author_name": "Dimas",
+    "project_group": "Group_name",
     "version": "0.1.0",
-    "license": ["MIT", "GPLv3", "Apache 2.0"],
-    "group_id": "",
-    "use_ci_cd": "yes"
+    "group_id": ""
 }
 
