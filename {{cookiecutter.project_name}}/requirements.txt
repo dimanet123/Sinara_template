@@ -1,0 +1,2 @@
+--trusted-host 10.77.0.107
+--index-url "http://token:wHDfRAMxfcy6y_vQVSte@10.77.0.107/api/v4/projects/519/packages/pypi"
